@@ -1,0 +1,126 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 15%;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #666666;
+  min-height: 100%;
+}
+
+.footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #666666;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 80px;
+  width: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #a0a0a0;
+  margin: 10px 0;
+}
+
+.footer_text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.row_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.scan_btn {
+  padding: 10px 30px;
+  margin: 10px;
+  color: aliceblue;
+  font-size: 22px;
+  background-color: #2a2a72;
+  background-image: linear-gradient(0deg, #2a2a72 0%, #009ffd 74%);
+  border: none;
+  border-radius: 5px;
+}
+
+.view_cont {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+}
+
+
+.view_btn {
+  background-color: #00000000;
+  border: none;
+  color: #009ffd;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  position: relative;
+  margin: 20px 0;
+}
+
+
+.view_btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #009ffd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.view_btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} 
+
+.choose_file_cont {
+border: #9f9f9f dashed 2px;
+padding: 15px 30px;
+border-radius: 10px;
+margin: 100px 0 30px 0;
+align-self: center;
+}
+
+.table_text {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.table_cont {
+  width: 100%;
+  border: #9f9f9f solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.table_title {
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.th_cont {
+  border-bottom: #9f9f9f solid 1px;
+}
